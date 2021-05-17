@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Ashish-AVS/basic-Todo/static/css/main.2252cac9.chunk.css",
-    "main.js": "/Ashish-AVS/basic-Todo/static/js/main.233f6b89.chunk.js",
-    "main.js.map": "/Ashish-AVS/basic-Todo/static/js/main.233f6b89.chunk.js.map",
-    "runtime-main.js": "/Ashish-AVS/basic-Todo/static/js/runtime-main.68a22b7a.js",
-    "runtime-main.js.map": "/Ashish-AVS/basic-Todo/static/js/runtime-main.68a22b7a.js.map",
-    "static/css/2.14c36052.chunk.css": "/Ashish-AVS/basic-Todo/static/css/2.14c36052.chunk.css",
-    "static/js/2.0c641e31.chunk.js": "/Ashish-AVS/basic-Todo/static/js/2.0c641e31.chunk.js",
-    "static/js/2.0c641e31.chunk.js.map": "/Ashish-AVS/basic-Todo/static/js/2.0c641e31.chunk.js.map",
-    "index.html": "/Ashish-AVS/basic-Todo/index.html",
-    "static/css/2.14c36052.chunk.css.map": "/Ashish-AVS/basic-Todo/static/css/2.14c36052.chunk.css.map",
-    "static/css/main.2252cac9.chunk.css.map": "/Ashish-AVS/basic-Todo/static/css/main.2252cac9.chunk.css.map",
-    "static/js/2.0c641e31.chunk.js.LICENSE.txt": "/Ashish-AVS/basic-Todo/static/js/2.0c641e31.chunk.js.LICENSE.txt"
+    "main.css": "/basic-Todo/static/css/main.2252cac9.chunk.css",
+    "main.js": "/basic-Todo/static/js/main.233f6b89.chunk.js",
+    "main.js.map": "/basic-Todo/static/js/main.233f6b89.chunk.js.map",
+    "runtime-main.js": "/basic-Todo/static/js/runtime-main.94660417.js",
+    "runtime-main.js.map": "/basic-Todo/static/js/runtime-main.94660417.js.map",
+    "static/css/2.14c36052.chunk.css": "/basic-Todo/static/css/2.14c36052.chunk.css",
+    "static/js/2.88dd6e51.chunk.js": "/basic-Todo/static/js/2.88dd6e51.chunk.js",
+    "static/js/2.88dd6e51.chunk.js.map": "/basic-Todo/static/js/2.88dd6e51.chunk.js.map",
+    "index.html": "/basic-Todo/index.html",
+    "static/css/2.14c36052.chunk.css.map": "/basic-Todo/static/css/2.14c36052.chunk.css.map",
+    "static/css/main.2252cac9.chunk.css.map": "/basic-Todo/static/css/main.2252cac9.chunk.css.map",
+    "static/js/2.88dd6e51.chunk.js.LICENSE.txt": "/basic-Todo/static/js/2.88dd6e51.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.68a22b7a.js",
+    "static/js/runtime-main.94660417.js",
     "static/css/2.14c36052.chunk.css",
-    "static/js/2.0c641e31.chunk.js",
+    "static/js/2.88dd6e51.chunk.js",
     "static/css/main.2252cac9.chunk.css",
     "static/js/main.233f6b89.chunk.js"
   ]
