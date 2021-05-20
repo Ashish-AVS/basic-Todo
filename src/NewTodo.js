@@ -3,12 +3,12 @@ import { Input, Typography, Button, Checkbox } from 'antd';
 import './App.css'
 import firebase from './utils/firebase'
 
-const Todos = () => {
+const Todos = ({authData}) => {
     const [queryBody, setQueryBody] = useState("");
     const [data, setData] = useState([]);
 
 
-
+    {console.log(authData.displayName, authData.email)}
 
     // Firebase Stuff
 
