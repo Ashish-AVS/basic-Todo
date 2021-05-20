@@ -1,23 +1,54 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Input, Typography, Button, Checkbox } from 'antd';
 import './App.css'
+import firebase from './utils/firebase'
 
 const Todos = () => {
     const [queryBody, setQueryBody] = useState("");
     const [data, setData] = useState([]);
+
+
+
+
+    // Firebase Stuff
+
+    useEffect(() => {
+        const todoRef = firebase.database().ref("Todo");
+        todoRef.on('value', (snapshot) => {
+            // console.log(snapshot.val());
+            const todos = snapshot.val();
+            const todoList = [];
+
+            for(let ids in todos) {
+                todoList.push({id: ids, ...todos[ids]}); // Loop through and obj and push id
+            }   
+            //READ
+            console.log(todoList);
+            // console.log(data);
+            setData(todoList);
+        } )
+      }, [])
+    
     const addTodoHandler = () => {
         if(!queryBody){
             alert("Enter a Todo")
             return
         }
-        const d = new Date();
-        const newObj = {id:d.getSeconds()+d.getUTCMilliseconds(), Body:queryBody, striked:false};
-        setData(prevState => [...prevState, newObj]);
+        const todo = { Body:queryBody, striked:false };
+
+        // WRITE
+        const todoRef = firebase.database().ref("Todo"); //Call it anything you want
+        todoRef.push(todo);
+        
+        // setData(prevState => [...prevState, todo]);
         setQueryBody("")
     }
     const removeTodos = (id) => {
-        const newData = data.filter(todo => todo.id!==id);
-        setData(newData);
+        // const newData = data.filter(todo => todo.id!==id);
+        // setData(newData);
+        const todoRef = firebase.database().ref('Todo').child(id);
+        todoRef.remove();
+        console.log(id)
     }
 
     const handleStrike = (id) => {
@@ -26,6 +57,10 @@ const Todos = () => {
             return el;
         })
         setData(temp);
+        // const todoRef = firebase.database().ref('Todo').child('id');
+        // todoRef.update({
+        //     striked: !data
+        // })
     }
     return(
         <div className="container">
